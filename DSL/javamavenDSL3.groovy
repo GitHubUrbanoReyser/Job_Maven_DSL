@@ -1,9 +1,9 @@
 job('Java Maven App DSL 3') {
-    description('Java Maven App con DSL para el curso de Jenkins')
+    description('Java Maven App con DSL')
     scm {
-        git('https://github.com/macloujulian/simple-java-maven-app.git', 'master') { node ->
-            node / gitConfigName('macloujulian')
-            node / gitConfigEmail('macloujulian@gmail.com')
+        git('https://github.com/GitHubUrbanoReyser/Job_Maven_DSL.git', 'main') { node ->
+            node / gitConfigName('demo')
+            node / gitConfigEmail('r.urbano7@outlook.com')
         }
     }
     triggers {
@@ -49,9 +49,9 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	scm {
-		git('https://github.com/macloujulian/simple-java-maven-app.git', 'master') { node ->
-		    node / gitConfigName('macloujulian')
-		    node / gitConfigEmail('macloujulian@gmail.com')
+		git('https://github.com/GitHubUrbanoReyser/Job_Maven_DSL.git', 'main') { node ->
+		    node / gitConfigName('demo')
+		    node / gitConfigEmail('r.urbano7@outlook.com')
 		}
 	}
 	triggers {
